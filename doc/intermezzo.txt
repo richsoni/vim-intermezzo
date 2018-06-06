@@ -1,0 +1,49 @@
+*intermezzo.vim*  Some short connecting instrumentation for the [terminal] mode in neovim
+Author:  Rich Soni <http://richsoni.com/>
+License: Same terms as Vim itself (see |license|)
+Version: 0.0.1
+
+==============================================================================
+TABLE OF CONTENTS
+
+|intermezzo-motivation|          Background of plugin
+|intermezzo-escape|              Mapping for escape
+|intermezzo-ctrl-t|              CTRL-T Terminal Commands
+|intermezzo-about|               About Intermezzo
+
+==============================================================================
+MOTIVATION                      *intermezzo-motivation*
+
+This plugin is a supplement neovim's `:term{inal}` mode.
+
+==============================================================================
+ESCAPE                                      *intermezzo-escape*
+
+There is a mapping to make escape exit terminal insert mode.
+>
+ tnoremap <Esc> <C-\><C-n>
+
+==============================================================================
+CTRL-T (Terminal Commands)                  *intermezzo-ctrl-t*
+
+The inspiration for these commands comes from the `Window commands` that are built into vim's core build.
+Like all Window Commands are prefixed with `CTRL-W`, all terminal commands are prefixed with `CTRL-T`.
+
+tag             command            action in Normal mode  ~
+-----------------------------------------------------------------------
+|CTRL-T_CTRL-V|  CTRL-T CTRL-V     split current window and execute :term 
+|CTRL-T_V|       CTRL-T v          same as "CTRL-T CTRL-V"
+|CTRL-T_CTRL-S|  CTRL-T CTRL-S     split current window and execute :term 
+|CTRL-T_S|       CTRL-T s          same as "CTRL-T CTRL-S"
+|CTRL-T_CTRL-T|  CTRL-T CTRL-T     open new tab page, and execute :term
+|CTRL-T_T|       CTRL-T T          same as "CTRL-T CTRL-T"
+|CTRL-T_CTRL-E|  CTRL-T CTRL-E     execute :term in current window
+|CTRL-T_E|       CTRL-T E          same as "CTRL-T CTRL-E"
+==============================================================================
+ABOUT                           *intermezzo-about*
+
+Grab the latest version or report a bug on GitHub:
+
+http://github.com/richsoni/vim-intermezzo
+
+ vim:tw=78:et:ft=help:norl:
