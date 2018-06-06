@@ -1,4 +1,6 @@
-## inTERMezzo.vim: some short connecting instrumentation for the [terminal] mode in neovim.
+## inTERMezzo.vim
+
+some short connecting instrumentation for the [terminal] mode in neovim.
 
 # Motivation
 
